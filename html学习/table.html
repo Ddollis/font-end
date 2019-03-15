@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- th 表头 tbody表格主体 thead 表格的页眉 border是否有边框
+    rowspan 夸行 colspan 跨列
+-->
+<table border="1">
+    <colgroup>
+        <col class="browser">
+        <col class="engine" span="2">
+    </colgroup>
+    <thead>
+    <tr>
+        <th>浏览器</th>
+        <th>渲染引擎</th>
+        <th>JavaScript 引擎</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th>Chrome</th>
+        <td>Blink</td>
+        <td>V8</td>
+    </tr>
+    <tr>
+        <th>Opera</th>
+        <td>Blink</td>
+        <td>V8</td>
+    </tr>
+    </tbody>
+</table>
+
+<table border="1">
+    <!-- caption 必须是table的第一个元素 -->
+    <caption>浏览器及其引擎</caption>
+    <thead>
+    <tr>
+        <th>浏览器</th>
+        <th>Chrome</th>
+        <th>Opera</th>
+        <th>Firefox</th>
+        <th>Edge</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th>渲染引擎</th>
+        <td colspan="2">Blink</td>
+        <td>Gecko</td>
+        <td>Edge</td>
+    </tr>
+    </tbody>
+</table>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>浏览器</th>
+        <th>Chrome</th>
+        <th>Opera</th>
+        <th>Firefox</th>
+        <th>Edge</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th>渲染引擎</th>
+        <td colspan="2">Blink</td>
+        <td>Gecko</td>
+        <td>Edge</td>
+    </tr>
+    </tbody>
+</table>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>浏览器</th>
+        <th>渲染引擎</th>
+        <th>JavaScript 引擎</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th>Chrome</th>
+        <td rowspan="2">Blink</td>
+        <td rowspan="2">V8</td>
+    </tr>
+    <tr>
+        <th>Opera</th>
+    </tr>
+    </tbody>
+</table>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>浏览器</th>
+        <th>渲染引擎</th>
+        <th>JavaScript 引擎</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th>Chrome</th>
+        <td>Blink</td>
+        <td>V8</td>
+    </tr>
+    <tr>
+        <th>Opera</th>
+        <td>Blink</td>
+        <td>V8</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

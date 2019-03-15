@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var formId=document.getElementById("form");
+        console.log(formId);
+    </script>
+</head>
+<body>
+<form id="form4" name="form1" action="http://www.baidu.com">
+    <input type="text">
+    <button type="reset">reset</button>
+</form>
+
+<form id="form3" name="form1" action="http://www.baidu.com">
+    <input type="text">
+    <input type="reset" value="reset">
+</form>
+
+<form id="form2" name="form1" action="http://www.baidu.com">
+    <!-- 存放一个input放在这，为了获取焦点，然后我们可以按enter键提交 -->
+    <input type="text">
+    <input type="image" src="aa.jpg">
+</form>
+<form id="form1" name="form1" action="http://www.baidu.com">
+    <!-- 存放一个input放在这，为了获取焦点，然后我们可以按enter键提交 -->
+    <input type="text">
+    <button type="submit">submit</button>
+</form>
+<form id="form" name="form1" action="http://www.baidu.com">
+    <!-- 存放一个input放在这，为了获取焦点，然后我们可以按enter键提交 -->
+    <input type="text">
+    <input type="submit" value="submit">
+</form>
+<form action="" id="" name="form1"></form>
+<form action="/echo" method="post">
+    <p>用户名：<input type="text" name="username"></p>
+    <p>密码：<input type="password" name="password"></p>
+    <p><button type="submit">登录</button></p>
+</form>
+</body>
+</html>

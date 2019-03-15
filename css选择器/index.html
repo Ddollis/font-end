@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        /*通配选择器、标签选择器、ID选择器、类选择器*/
+        #example {
+            font-size: 2em; /*设置元素字体大小*/
+            line-height: 1.6; /*设置行高*/
+            color: red;
+        }
+
+        .error {
+            color: orange;
+        }
+
+        .icon {
+            background: url("error.png") no-repeat 0 0;
+        }
+
+        input[disabled] {
+            background: #ddd;
+            color: #999;
+            cursor: not-allowed;
+        }
+
+        input[type="password"] {
+            border-color: red;
+            color: red;
+        }
+
+        a:link { /* 未访问过的链接 */
+            color: black;
+        }
+
+        a:visited { /* 已访问过的链接 */
+            color: gray;
+        }
+
+        a:hover { /* 鼠标移到链接上的样式 */
+            color: orange;
+        }
+
+        a:active { /* 鼠标在连接上按下时的样式 */
+            color: red;
+        }
+
+        :focus { /* 获得焦点时的样式 */
+            outline: 2px solid red;
+        }
+
+        /*h1::before {
+            content: "h1插入后的内容";
+        }
+
+        h2::after {
+            content: "none";
+        }*/
+        /*直接组合*/
+        p.warning {
+            color: orange;
+        }
+        /*后代组合*/
+        article p {
+            color: coral;
+        }
+
+        article section h2{
+            border-bottom: 1px dashed #999;
+        }
+        /*亲子组合*/
+        article > p{
+            color: limegreen;
+        }
+        /*同时定义一组元素的样式*/
+        body, h1, h2, h3, h4, h5, h6, ul, ol, li {
+            margin: 0;
+            padding: 0;
+        }
+        [type="checkbox"], [type="radio"] {
+            box-sizing: border-box;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<article>
+    <h1>一级标题</h1>
+    <p>第一段第一段。</p>
+    <section>
+        <h2>二级标题</h2>
+        <p>第二段第二段。</p>
+    </section>
+</article>
+
+<p id="example">Just test content.</p>
+<p class="error">Error message.</p>
+<p class="error icon">Another Error Message.</p>
+<p>
+    <label>用户名：</label>
+    <input name="username" value="tw" disabled>
+</p>
+<p>
+    <label>密码：</label>
+    <input type="password" required>
+</p>
+
+<nav>
+    <ul>
+        <li><a href="http://w3.org">W3C</a>
+        <li><a href="http://example.com">example.com</a>
+        <li><a href="http://www.360.com">360</a>
+    </ul>
+</nav>
+<label>搜索：<input name="q" type="search"></label>
+
+<h1>这是h1</h1>
+<h2>这是h2</h2>
+
+<p class="warning">这是一条警告信息</p>
+<div class="warning icon">这是另外一条警告信息</div>
+
+
+</body>
+</html>

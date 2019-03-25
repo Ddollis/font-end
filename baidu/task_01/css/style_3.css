@@ -1,0 +1,60 @@
+#content {
+    margin: 50px;
+    border: 2px solid black;
+    padding: 0;
+    overflow: hidden;
+}
+
+h1 {
+    background-color: grey;
+    color: white;
+    font-size: 1.5em;
+    padding: 6px 0px 6px 15px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.2em;
+    width: 10%;
+    height: 80px;
+    text-align: center;
+    margin: 0px;
+    background-color: gainsboro;
+    line-height: 80px;
+}
+
+.info-margin {
+    float: left;
+}
+
+.layout-info {
+    padding-bottom: 1px;
+    overflow: hidden;
+}
+
+.label-long {
+    padding-right: 10px;
+}
+
+.value-long {
+    padding-right: 30px;
+}
+
+.layout-top-border {
+    border: 1px gainsboro solid;
+}
+
+p {
+    padding-left: 20px;
+}
+
+.info-line {
+    display: inline-block;
+    width: 80%;
+    margin-bottom: 0px;
+}
+
+.info-no-top-margin {
+    margin-top: 0px;
+    /* padding-top: 0px; */
+}

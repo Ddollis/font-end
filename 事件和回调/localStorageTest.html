@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="result">
+<input type="button" name="" id="" value="点我吧！">
+<script>
+    localStorage.clear();
+    localStorage.setItem('a', '0');
+    var result = document.getElementById('result');
+    result.value = localStorage.getItem('a');
+    var btn = document.getElementsByTagName('input')[1];
+    btn.onclick = function () {
+        localStorage.a = parseInt(localStorage.getItem('a')) + 1;
+        result.value = localStorage.a;
+    };
+</script>
+</body>
+</html>

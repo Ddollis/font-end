@@ -4,3 +4,7 @@ console.log(a, b, c);
 
 let [x, y, z] = new Set(['a', 'b', 'c']);
 console.log(x);
+
+(() => {
+  console.log('Welcome to the Internet.');
+})();
